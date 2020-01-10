@@ -73,7 +73,7 @@ open class CalendarHeaderView: UIView {
         for index in start..<(start+7) {
             let label = dayLabels[i]
             label.font = style.weekdaysFont
-            label.text = formatter.shortWeekdaySymbols[(index % 7)].capitalized
+            label.text = formatter.veryShortWeekdaySymbols[(index % 7)].capitalized
             label.textColor = style.weekdaysTextColor
             label.textAlignment = .center
             
