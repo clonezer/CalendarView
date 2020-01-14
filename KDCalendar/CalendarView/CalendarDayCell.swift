@@ -40,10 +40,9 @@ open class CalendarDayCell: UICollectionViewCell {
                 self.bgView.layer.borderColor = style.cellSelectedBorderColor.cgColor
                 self.bgView.layer.borderWidth = style.cellSelectedBorderWidth
                 self.bgView.backgroundColor = style.cellSelectedColor
-                self.dotsView.isHidden = false
-            }else {
-                self.dotsView.isHidden = true
+                self.textLabel.textColor = style.cellSelectedTextColor
             }
+            self.dotsView.isHidden = true
             self.setNeedsLayout()
         }
     }
