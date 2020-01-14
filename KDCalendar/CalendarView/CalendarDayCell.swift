@@ -36,7 +36,14 @@ open class CalendarDayCell: UICollectionViewCell {
     
     var eventsCount = 0 {
         didSet {
-            self.dotsView.isHidden = (eventsCount == 0)
+            if (eventsCount > 0) {
+                self.bgView.layer.borderColor = style.cellSelectedBorderColor.cgColor
+                self.bgView.layer.borderWidth = style.cellSelectedBorderWidth
+                self.bgView.backgroundColor = style.cellSelectedColor
+                self.dotsView.isHidden = false
+            }else {
+                self.dotsView.isHidden = true
+            }
             self.setNeedsLayout()
         }
     }

@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         style.cellFont = UIFont(name: "Helvetica", size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
         style.headerFont = UIFont(name: "Helvetica", size: 20.0) ?? UIFont.systemFont(ofSize: 20.0)
         style.weekdaysFont = UIFont(name: "Helvetica", size: 14.0) ?? UIFont.systemFont(ofSize: 14.0)
-        
+        style.isShowHeader = false
         calendarView.style = style
         
         calendarView.dataSource = self

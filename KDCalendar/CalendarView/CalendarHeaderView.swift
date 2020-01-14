@@ -45,7 +45,7 @@ open class CalendarHeaderView: UIView {
         monthLabel = UILabel()
         monthLabel.translatesAutoresizingMaskIntoConstraints = false
         monthLabel.backgroundColor = UIColor.clear
-        self.addSubview(monthLabel)
+//        self.addSubview(monthLabel)
         
         for _ in 0..<7 {
             let label = UILabel()
